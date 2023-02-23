@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section></section>
+    <script>
+        let sect = document.querySelector('section')
+        let para1 = document.createElement('p')
+        let para2 = document.createElement('p')
+        sect.appendChild(para1)
+        sect.appendChild(para2)
+        const quote = 'i do not like green eggs and ham. I do not like them, Ope-I-Am.'
+       let substring = 'green eggs and ham'
+       const quoteLength = quote.length
+       console.log(quoteLength)
+       quote.indexOf(substring) 
+       let index = substring
+     
+        let went = quote.slice(0,14)
+       let revisedQuote = went.concat(index)
+       para1.textContent = revisedQuote
+      let dislike = 'rat'
+       let fixedQuote = quote.replace(substring,dislike)
+       para2.textContent = fixedQuote
+
+    </script>
+</body>
+</html>
